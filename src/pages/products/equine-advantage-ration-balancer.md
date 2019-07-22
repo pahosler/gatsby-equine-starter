@@ -4,7 +4,7 @@ title: Equine Advantage 30% Ration Balancer
 slug: equine-advantage-ration-balancer
 heading: A portrait of health, vitality and life
 subheading: Formulated by veteranarians
-product_image: /img/EquineAdvantage_Render-1@2x.png
+product_image: /img/EquineAdvantage_Render@2x.png
 meta_title: Equine Advantage 30% Ration Balancer
 meta_description: >-
   A pelleted feed that is concentrated and designed to be fed along with quality hay or pasture.

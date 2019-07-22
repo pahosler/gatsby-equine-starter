@@ -4,7 +4,7 @@ title: Equine Advantage Low Starch Omega
 slug: equine-advantage-low-starch-omega
 heading: A portrait of health, vitality and life
 subheading: Formulated by veteranarians
-product_image: /img/EquineAdvantage_Render@2x.png
+product_image: /img/EquineAdvantage_Render-1@2x.png
 meta_title: Equine Advantage Low Starch Omega
 meta_description: >-
   A textured feed that is designed for horses that require moderate to significant calories in addition to their forage.

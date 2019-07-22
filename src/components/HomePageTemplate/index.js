@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Products from '../Products'
+import Quote from '../Quote'
+import Advantage from '../Advantage'
 
 const HomePageTemplate = ({
   title,
@@ -49,7 +51,7 @@ const HomePageTemplate = ({
         <div className='column is-three-fifths-desktop is-one-quarter-mobile' />
         <div className='column'>
           <div className='button is-low-starch-blue is-border-low-starch-blue is-medium has-text-right is-radiusless'
-            style={{ zIndex: 10, marginTop: -45 }}
+            style={{ zIndex: 10 }}
           >
             <Link className='has-text-black is-size-6 has-text-weight-bold' to='/'>
             ORDER A SAMPLE
@@ -59,7 +61,7 @@ const HomePageTemplate = ({
       </div>
       <figure className='is-3by1'>
         <img className='image' src='/img/horse-header.png'
-          style={{ marginTop: -70 }}
+          style={{ marginTop: -50 }}
           alt='An oil painting of a mare and her foul'
         />
       </figure>
@@ -67,14 +69,19 @@ const HomePageTemplate = ({
     <section className='section is-low-starch-blue'>
       <div className='columns is-centered'>
         <div className='column is-half'>
-          <div className='is-size-5 has-text-weight-bold has-text-centered has-text-black'><u>EQUINE ADVANTAGE PRODUCTS</u></div>
+          <div className='is-size-5 has-text-weight-bold has-text-centered has-text-black'>
+            <u>EQUINE ADVANTAGE PRODUCTS</u>
+          </div>
         </div>
-        <br />
-        <br />
-        <br />
       </div>
       <Products gridItems={offerings.blurbs} partners={partners} />
     </section>
+    <Quote
+      text={quote.text}
+      name={quote.name}
+      title={quote.title}
+    />
+    <Advantage advantage={advantage} />
   </div>
 )
 

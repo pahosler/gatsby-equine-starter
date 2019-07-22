@@ -43,7 +43,7 @@ partners:
     - image: /img/Diamondv_logo-01.svg
 quote:
   text: >-
-   "We've been feeding our champion horse Equine Advantage with great results. She really enjoys the feed and the results have been undeniable.":
+   "We've been feeding our champion horse Equine Advantage with great results. She really enjoys the feed and the results have been undeniable."
   name: Betsy Ross
   title: Owner of Dancing Queen
 advantage:

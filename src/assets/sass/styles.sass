@@ -1,12 +1,11 @@
 
 
-$white: #ffffff
-$ea-blacker: #222121
-$low-starch-blue: #83CFCE
-$mdst-blue: #289BD6
-$ea-black: #232323
-$light-grey: #FAFAFA
-$darkest-grey: #151515
+$ea-blacker: hsla(0, 1%, 13%, 1)
+$low-starch-blue: hsla(179, 44%, 66%, 1)
+$mdst-blue: hsla(200, 68%, 49%, 1)
+$ea-black: hsla(0, 0%, 13%, 1)
+$light-grey: hsla(200, 68%, 49%, 1)
+$darkest-grey: hsla(0, 0%, 8%, 1)
 $is-link: $mdst-blue
 $navbar-height: 1.0rem
 $navbar-item-img-max-height: 2.5rem
@@ -15,18 +14,47 @@ $navbar-item-img-max-height: 2.5rem
 
 @import "~bulma"
 
-// .button
-//   border-radius: 0
-
 .is-mdst-blue
   background-color: $mdst-blue
 
 .is-low-starch-blue
   background-color: $low-starch-blue
 
+.is-ea-black
+  background: $ea-black
+
+.is-ea-blacker
+  background: $ea-blacker
+
+.is-light-grey
+  background: $light-grey
+
+.is-darkest-grey
+  background: $darkest-grey
+
 .button.is-border-low-starch-blue
   border-color: $low-starch-blue
 
-// .section.has-section-padding-none
-//   padding: 0
-//   margin: 0
+.hero.has-hero-image
+  background: $darkest-grey url(../img/horseback@2x.png) center / cover
+
+.has-text-mdst-blue
+  color: $mdst-blue
+
+.has-text-low-starch-blue
+  color: $low-starch-blue
+
+.has-text-ea-black
+  color: $ea-black
+
+.has-text-ea-blacker
+  color: $ea-blacker
+
+.has-text-darket-grey
+  color: $darkest-grey
+
+.has-text-light-grey
+  color: $light-grey
+
+.has-huge-text
+  transform: matrix(10,0,-5,10,0,0)

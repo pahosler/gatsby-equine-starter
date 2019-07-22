@@ -1,0 +1,39 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const Advantage = ({ advantage }) => (
+  <div className='section'>
+    <div className='columns is-centered'>
+      <div className='column is-half'>
+        <h1 className='is-size-4 has-text-ea-black has-text-centered'><strong><u>WHAT MAKES EA DIFFERENT</u></strong></h1>
+      </div>
+    </div>
+    <div className='column is-three-fifths is-offset-one-fifth'>
+      <div className='columns is-gapless is-multiline is-centered level'>
+        {advantage.map(item => (
+          <div key={item.image} className='column is-4'>
+            <section className='section has-section-padding-none'>
+              <div className='level-item'>
+                <figure className='image is-128x128' >
+                  <img alt={item.name} src={item.image} />
+                </figure>
+              </div>
+              <p className='level-item has-text-black has-text-centered' style={{ padding: 20 }}>{item.text}</p>
+            </section>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+)
+
+Advantage.propTypes = {
+  advantage: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string,
+      text: PropTypes.string,
+    })
+  ),
+}
+
+export default Advantage

@@ -4,31 +4,33 @@ import PropTypes from 'prop-types'
 
 const Products = ({ gridItems, partners }) => (
   <Fragment>
-    <div className='columns is-multiline level'>
-      {gridItems.map(item => (
-        <div key={item.image} className='column is-4'>
-          <section className='section'>
-            <p className='has-text-centered level-item'>
-              <Link to={`/products/${item.slug}`}>
-                <figure className='image'>
-                  <img alt={item.name} src={item.image} style={{ height: 255, width: 163 }} />
-                </figure>
-              </Link>
-            </p>
-            <h3 className='is-size-5 has-text-centered has-text-weight-bold has-text-black level-item'>{item.name}</h3>
-            <p className='level-item has-text-black' style={{ width: '100%' }}>{item.text}</p>
-          </section>
+    <div className='columns is-centered '>
+      <div className='column is-four-fifths'>
+        <div className='columns is-multiline is-centered '>
+          {gridItems.map(item => (
+            <div key={item.image} className='column is-one-third'>
+              <section className='section has-section-padding-none'>
+                <div className='center'>
+                  <Link to={`/products/${item.slug}`}>
+                    <div style={{ background: `url(${item.image}) no-repeat center / cover`, height: 251, width: 168, margin: 20 }} />
+                  </Link>
+                </div>
+                <h3 className='is-size-5 has-text-weight-bold has-text-ea-black' style={{ padding: 10 }} >{item.name}</h3>
+                <p className='has-text-ea-black' style={{ padding: 5 }}>{item.text}</p>
+              </section>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
     <div className='columns is-centered'>
       <div className='column is-half'>
-        <div className='columns is-mobile is-centered level'>
+        <div className='columns is-mobile is-centered '>
           {partners.logo.map(logo => (
             <div key={logo.image} className='column is-3'>
-              <section className='section'>
-                <figure className='image is-96x96 level-item'>
-                  <img alt='partner logo' src={logo.image} />
+              <section className='section' style={{ padding: 10 }}>
+                <figure className='image is-96x96'>
+                  <img alt='partner logo' src={logo.image} style={{ paddingRight: 10 }} />
                 </figure>
               </section>
             </div>
@@ -48,11 +50,9 @@ Products.propTypes = {
       text: PropTypes.string,
     })
   ),
-  partners: PropTypes.arrayOf(
-    PropTypes.shape({
-      logo: PropTypes.array,
-    })
-  ),
+  partners: PropTypes.shape({
+    logo: PropTypes.array,
+  }),
 }
 
 export default Products
