@@ -133,7 +133,6 @@ module.exports = {
                         title
                         description
                         image_url
-                        author
                         copyright
                       }
                     }
