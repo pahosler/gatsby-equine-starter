@@ -1,17 +1,55 @@
 import React from 'react'
-import config from '../../../config'
+// import config from '../../../config'
+import { Link } from 'gatsby'
+import Logo from '../../assets/img/equineadvantage_logo.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => {
   return (
-    <footer className='footer'>
-      <div className='container'>
-        <div className='content has-text-centered'>
-          <p>
-            {config.copyright}
-          </p>
-          <p>Powered by <a href='https://www.gatsbyjs.org'>Gatsby</a> and <a href='https://www.netlifycms.org'>Netlify CMS</a> | <a href='https://github.com/v4iv/gatsby-starter-business'>Github Repository</a></p>
+    <footer className='footer is-paddingless'>
+      <div className='section is-ea-black'>
+        <div className='columns is-centered is-mobile'>
+          <div className='column is-one-fifth-desktop is-half-mobile'>
+            <p className='has-text-weight-bold has-text-light-grey is-size-6 is-size-7-mobile has-text-centered'>
+              <u>LET'S STAY IN TOUCH</u>
+            </p>
+
+          </div>
+        </div>
+        <div className='columns is-centered is-mobile'>
+          <div className='column is-one-quarter has-text-centered has-text-low-starch-blue'>
+            <FontAwesomeIcon icon='map-marker-alt' size='3x' />
+            <br />
+            <div className='button is-rounded is-low-starch-blue' style={{ height: 44, width: 191, marginTop: 30 }}>
+              <Link to='/locate'><span className='has-text-ea-black'>FIND A STORE</span></Link>
+            </div>
+          </div>
+          <div className='column is-one-quarter has-text-centered has-text-low-starch-blue'>
+            <FontAwesomeIcon icon={['far', 'envelope']} size='3x' />
+            <br />
+            <div className='button is-rounded is-low-starch-blue has-text-ea-black' style={{ height: 44, width: 191, marginTop: 30 }}>
+              <Link to='/contact'><span className='has-text-ea-black'>EMAIL US</span></Link>
+            </div>
+          </div>
+          <div className='column is-one-quarter has-text-centered has-text-low-starch-blue'>
+            <FontAwesomeIcon icon='link' size='3x' />
+            <br />
+            <div className='button is-rounded is-low-starch-blue has-text-ea-black' style={{ height: 44, width: 191, marginTop: 30 }}>
+              <Link to='#'><span className='has-text-ea-black'>NEWSLETTER</span></Link>
+            </div>
+          </div>
         </div>
       </div>
+      <div className='section is-low-starch-blue'>
+        <div className='columns is-centered is-mobile'>
+          <div className='column is-one-fifth-desktop is-half-mobile'>
+            <figure className='image is-128x128'>
+              <img src={Logo} />
+            </figure>
+          </div>
+        </div>
+      </div>
+
     </footer>
   )
 }

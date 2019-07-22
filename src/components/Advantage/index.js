@@ -9,17 +9,15 @@ const Advantage = ({ advantage }) => (
       </div>
     </div>
     <div className='column is-three-fifths is-offset-one-fifth'>
-      <div className='columns is-gapless is-multiline is-centered level'>
+      <div className='columns is-multiline is-centered'>
         {advantage.map(item => (
-          <div key={item.image} className='column is-4'>
-            <section className='section has-section-padding-none'>
-              <div className='level-item'>
-                <figure className='image is-128x128' >
-                  <img alt={item.name} src={item.image} />
-                </figure>
-              </div>
-              <p className='level-item has-text-black has-text-centered' style={{ padding: 20 }}>{item.text}</p>
-            </section>
+          <div key={item.image} className='column is-one-third'>
+            {/* <div className='level-item'> */}
+            <figure className='image is-128x128' >
+              <img alt={item.name} src={item.image} style={{ margin: 50 }} />
+            </figure>
+            {/* </div> */}
+            <p className='is-size-5 has-text-ea-black has-text-centered' style={{ paddingTop: 20 }}>{item.text}</p>
           </div>
         ))}
       </div>
