@@ -35,12 +35,10 @@ offerings:
       name: SENIOR
       text: >
         A textured feed that is designed for all of the nutritional needs of adult and mature horses that is easy to chew. Fortified with Grand Meadows supplement for the overall health and immune system of your horse. Formulated with highly digestible fiber sources-such as shredded beet pulp & soy bean hulls. Senior offers increased protein, amino acids, trace minerals, biotin, Lysine and vitamin fortifications that older horses with reduced digestive efficiency may benefit from.
-
 partners:
-  logo:
-    - image: /img/Diamondv_logo-01.svg
-    - image: /img/grandmeadows_logo-01.svg
-    - image: /img/Diamondv_logo-01.svg
+  - logo: /img/Diamondv_logo-01.svg
+  - logo: /img/grandmeadows_logo-01.svg
+  - logo: /img/Diamondv_logo-01.svg
 quote:
   text: >
     "We've been feeding our champion horse Equine Advantage with great results. She really enjoys the feed and the results have been undeniable."

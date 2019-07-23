@@ -94,7 +94,7 @@ HomePageTemplate.propTypes = {
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  partners: PropTypes.object,
+  partners: PropTypes.array,
   quote: PropTypes.shape({
     text: PropTypes.string,
     name: PropTypes.string,
