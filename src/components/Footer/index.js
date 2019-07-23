@@ -19,11 +19,10 @@ const Footer = () => {
         <div className='columns is-centered'>
           <div className='column is-one-quarter has-text-centered has-text-low-starch-blue'>
             <FontAwesomeIcon icon='map-marker-alt' size='3x' />
-            <p>
-              <div className='button is-rounded is-low-starch-blue' style={{ height: 44, width: 191, marginTop: 30 }}>
-                <Link to='/locate'><span className='has-text-ea-black'>FIND A STORE</span></Link>
-              </div>
-            </p>
+            <br />
+            <div className='button is-rounded is-low-starch-blue' style={{ height: 44, width: 191, marginTop: 30 }}>
+              <Link to='/'><span className='has-text-ea-black'>FIND A STORE</span></Link>
+            </div>
           </div>
           <div className='column is-one-quarter has-text-centered has-text-low-starch-blue'>
             <FontAwesomeIcon icon={['far', 'envelope']} size='3x' />
@@ -36,7 +35,7 @@ const Footer = () => {
             <FontAwesomeIcon icon='link' size='3x' />
             <br />
             <div className='button is-rounded is-low-starch-blue has-text-ea-black' style={{ height: 44, width: 191, marginTop: 30 }}>
-              <Link to='#'><span className='has-text-ea-black'>NEWSLETTER</span></Link>
+              <Link to='/'><span className='has-text-ea-black'>NEWSLETTER</span></Link>
             </div>
           </div>
         </div>

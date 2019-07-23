@@ -8,18 +8,20 @@ const ProductsPageTemplate = ({
   contentComponent,
   product_image,
   meta_title,
-  meta_desc,
+  meta_description,
   tags,
   title,
+  heading,
+  subheading,
 }) => {
   const PostContent = contentComponent || Content
   return (
     <div>
       <h1 className='title is-size-2 has-text-weight-bold is-bold-light'>
-        {title}
-        {console.log(product_image)}
+        {meta_title}
       </h1>
-      <img src={product_image} alt={title} />
+      <h2 className='subtitle is-size-6 has-text-weight-light is-italic'>{meta_description}</h2>
+      <img src={product_image} alt={subheading} />
       <PostContent content={content} />
       <div style={{ marginTop: `4rem` }}>
         <h4>Tags</h4>

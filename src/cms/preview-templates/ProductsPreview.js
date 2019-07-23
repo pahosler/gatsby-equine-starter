@@ -1,0 +1,33 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import ArticleTemplate from '../../components/ProductsPageTemplate'
+
+const ArticlePreview = ({ entry, widgetFor }) => {
+  return (
+    <div className='container content'>
+      <div className='columns'>
+        <div className='column is-10 is-offset-1'>
+          <ArticleTemplate
+            content={widgetFor('body')}
+            product_image={entry.getIn(['data', 'product_image'])}
+            meta_title={entry.getIn(['data', 'meta_title'])}
+            meta_desc={entry.getIn(['data', 'meta_description'])}
+            title={entry.getIn(['data', 'title'])}
+            heading={entry.getIn(['data', 'heading'])}
+            subheading={entry.getIn(['data', 'subheading'])}
+            slug={entry.getIn(['data', 'slug'])}
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
+ArticlePreview.propTypes = {
+  entry: PropTypes.shape({
+    getIn: PropTypes.func,
+  }),
+  widgetFor: PropTypes.func,
+}
+
+export default ArticlePreview

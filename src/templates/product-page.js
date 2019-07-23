@@ -29,9 +29,11 @@ const ProductPage = ({ data }) => {
                 contentComponent={HTMLContent}
                 product_image={post.frontmatter.product_image}
                 meta_title={post.frontmatter.meta_title}
-                meta_desc={post.frontmatter.meta_description}
+                meta_description={post.frontmatter.meta_description}
                 tags={post.frontmatter.tags}
                 title={post.frontmatter.title}
+                heading={post.frontmatter.heading}
+                subheading={post.frontmatter.subheading}
               />
               {/*  <Share
                 title={post.frontmatter.title}
@@ -61,7 +63,7 @@ ProductPage.propTypes = {
 export default ProductPage
 
 export const pageQuery = graphql`
-  query ProductPage($id: String) {
+  query ProductsByID($id: String) {
     markdownRemark(id: { eq: $id }) {
       id
       html
