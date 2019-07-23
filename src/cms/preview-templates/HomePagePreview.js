@@ -26,7 +26,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
         name: entry.getIn(['data', 'quote', 'name']),
         title: entry.getIn(['data', 'quote', 'title']),
       }}
-      advantage={{ advantage }}
+      advantage={entry.getIn(['data', 'advantage'])}
     />
   )
 }
