@@ -5,8 +5,8 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'offerings', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 
-  const entryPartners = entry.getIn(['data', 'partners'])
-  const partnersLogo = entryPartners ? entryPartners.toJS() : []
+  // const entryPartners = entry.getIn(['data', 'partners'])
+  // const partnersLogo = entryPartners ? entryPartners.toJS() : []
 
   // const entryAdvantage = entry.getIn(['data', 'advantage'])
   // const advantage = entryAdvantage ? entryAdvantage.toJS() : []
@@ -20,7 +20,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       subheading={entry.getIn(['data', 'subheading'])}
       description={entry.getIn(['data', 'description'])}
       offerings={{ blurbs }}
-      partners={{ partnersLogo }}
+      partners={entry.getIn(['data', 'partners', 'logo'])}
       quote={{
         text: entry.getIn(['data', 'quote', 'text']),
         name: entry.getIn(['data', 'quote', 'name']),
@@ -30,7 +30,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
     />
   )
 }
-// entry.getIn(['data', 'partners'])
+
 HomePagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
