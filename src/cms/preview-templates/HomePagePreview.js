@@ -20,7 +20,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       subheading={entry.getIn(['data', 'subheading'])}
       description={entry.getIn(['data', 'description'])}
       offerings={{
-        gridItems: blurbs,
+        blurbs,
         partners: entry.getIn(['data', 'partners']),
       }}
       quote={{
