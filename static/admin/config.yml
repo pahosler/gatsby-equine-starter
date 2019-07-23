@@ -19,7 +19,7 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Slug, name: slug, widget: string},{label: Name, name: name, widget: string}, {label: Text, name: text, widget: text}]}]}
-          - {label: Partners, name: partners, widget: object, fields: [{label: Logo, name: logo, widget: list, fields: [{label: Image, name: image, widget: image}]}, {label:}]}
+          - {label: Partners, name: partners, widget: object, fields: [{label: Logo, name: logo, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
           - {label: Quote, name: quote, widget: object, fields: [{label: Text, name: text, widget: text}, {label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}]}
           - {label: Advantage, name: advantage, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
           - {label: "Meta Title", name: meta_title, widget: string}
