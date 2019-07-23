@@ -5,8 +5,8 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryBlurbs = entry.getIn(['data', 'offerings', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
 
-  const entryPartners = entry.getIn(['data', 'partners', 'logo'])
-  const partnerImages = entryPartners ? entryPartners.toJS() : []
+  const entryPartners = entry.getIn(['data', 'partners'])
+  const partners = entryPartners ? entryPartners.toJS() : []
 
   const entryAdvantage = entry.getIn(['data', 'advantage'])
   const advantage = entryAdvantage ? entryAdvantage.toJS() : []
@@ -19,10 +19,8 @@ const HomePagePreview = ({ entry, getAsset }) => {
       heading={entry.getIn(['data', 'heading'])}
       subheading={entry.getIn(['data', 'subheading'])}
       description={entry.getIn(['data', 'description'])}
-      offerings={{
-        blurbs,
-        partners: entry.getIn(['data', 'partners']),
-      }}
+      offerings={{ blurbs }}
+      partners={{ partners }}
       quote={{
         text: entry.getIn(['data', 'quote', 'text']),
         name: entry.getIn(['data', 'quote', 'name']),
