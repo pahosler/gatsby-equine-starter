@@ -74,7 +74,7 @@ const HomePageTemplate = ({
           </div>
         </div>
       </div>
-      <Products gridItems={offerings.blurbs} partners={partners} />
+      <Products gridItems={offerings.blurbs} logo={partners.logo} />
     </section>
     <Quote
       text={quote.text}
@@ -94,7 +94,9 @@ HomePageTemplate.propTypes = {
   offerings: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  partners: PropTypes.array,
+  partners: PropTypes.shape({
+    logo: PropTypes.array,
+  }),
   quote: PropTypes.shape({
     text: PropTypes.string,
     name: PropTypes.string,

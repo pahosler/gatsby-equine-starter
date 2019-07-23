@@ -51,7 +51,9 @@ export const pageQuery = graphql`
           }
         }
         partners {
-          logo
+          logo {
+            image
+          }
         }
         quote {
           text
