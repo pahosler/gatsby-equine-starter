@@ -26,7 +26,7 @@ collections:
           - {label: "Meta Description", name: meta_description, widget: text}
       - name: "product"
         label: "Products"
-        folder: "src/pages/products"
+        file: "src/pages/products"
         create: true
         slug: "{{slug}}"
         fields:
