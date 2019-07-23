@@ -95,12 +95,12 @@ HomePageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   partners: PropTypes.object,
-  quote: PropTypes.shape({
+  quote: PropTypes.objectOf({
     text: PropTypes.string,
     name: PropTypes.string,
     title: PropTypes.string,
   }),
-  advantage: PropTypes.arrayOf(
+  advantage: PropTypes.shape(
     PropTypes.shape({
       image: PropTypes.string,
       text: PropTypes.string,
