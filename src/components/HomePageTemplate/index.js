@@ -33,7 +33,7 @@ const HomePageTemplate = ({
               </div>
             </div>
             <div className='column is-6  '>
-              <div className='section'>
+              <div className='section is-hidden-mobile'>
                 <img src='/img/equineadvantage_logo.svg'
                   style={{ height: 186, width: 350, marginTop: -10 }}
                   alt='Equine Advantage logo'
