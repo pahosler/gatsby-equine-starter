@@ -26,12 +26,11 @@ const Products = ({ gridItems, partners }) => (
     <div className='columns is-centered'>
       <div className='column is-half'>
         <div className='columns is-mobile is-centered '>
-          {console.log(partners)}
-          {partners.map(logo => (
-            <div key={logo.logo} className='column is-3'>
+          {partners.map(image => (
+            <div key={image.logo} className='column is-3'>
               <section className='section' style={{ padding: 10 }}>
                 <figure className='image is-96x96'>
-                  <img alt='partner logo' src={logo.logo} style={{ paddingRight: 10 }} />
+                  <img alt='partner logo' src={image.logo} style={{ paddingRight: 10 }} />
                 </figure>
               </section>
             </div>
