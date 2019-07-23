@@ -8,8 +8,8 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryPartners = entry.getIn(['data', 'partners', 'logo'])
   const partnersLogo = entryPartners ? entryPartners.toJS() : []
 
-  const entryAdvantage = entry.getIn(['data', 'advantage'])
-  const advantage = entryAdvantage ? entryAdvantage.toJS() : []
+  // const entryAdvantage = entry.getIn(['data', 'advantage'])
+  // const advantage = entryAdvantage ? entryAdvantage.toJS() : []
 
   return (
     <HomePageTemplate
@@ -20,7 +20,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       subheading={entry.getIn(['data', 'subheading'])}
       description={entry.getIn(['data', 'description'])}
       offerings={{ blurbs }}
-      partners={{ partnersLogo }}
+      partners={entry.getIn(['data', 'partners', 'logo'])}
       quote={{
         text: entry.getIn(['data', 'quote', 'text']),
         name: entry.getIn(['data', 'quote', 'name']),
