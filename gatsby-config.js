@@ -73,7 +73,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
-        htmlTitle: `Gatsby Starter Business Content Manager`,
+        htmlTitle: `Gatsby Starter EA Content Manager`,
       },
     },
     {
@@ -145,14 +145,12 @@ module.exports = {
               const rssMetadata = ctx.query.site.siteMetadata.rssMetadata
               return ctx.query.allMarkdownRemark.edges
                 .filter(
-                  edge => edge.node.frontmatter.templateKey === 'article-page'
+                  edge => edge.node.frontmatter.templateKey === 'product-page'
                 )
                 .map(edge => ({
                   categories: edge.node.frontmatter.tags,
-                  date: edge.node.frontmatter.date,
                   title: edge.node.frontmatter.title,
                   description: edge.node.excerpt,
-                  author: rssMetadata.author,
                   url: rssMetadata.site_url + edge.node.fields.slug,
                   guid: rssMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }],

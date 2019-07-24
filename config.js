@@ -8,7 +8,7 @@ module.exports = {
   siteRss: '/rss.xml',
   siteFBAppID: '', // FB APP ID for app insights
   googleTagManagerID: '', // GTM tracking ID
-  copyright: 'Copyright © Gatsby Equine Starter 2019. All Rights Reserved',
+  copyright: 'middlestate Copyright © Gatsby Equine Starter 2019. All Rights Reserved',
   themeColor: '#83CFCE',
   backgroundColor: '#FAFAFA',
 }
