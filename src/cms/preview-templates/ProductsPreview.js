@@ -7,7 +7,7 @@ const ProductPreview = ({ entry, widgetFor }) => {
     <div className='container content'>
       <div className='columns'>
         <div className='column is-10 is-offset-1'>
-          <ProductPageTemplate
+          <ProductsPageTemplate
             content={widgetFor('body')}
             product_image={entry.getIn(['data', 'product_image'])}
             meta_title={entry.getIn(['data', 'meta_title'])}

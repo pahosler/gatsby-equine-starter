@@ -1,5 +1,7 @@
 backend:
   name: git-gateway
+  # test-repo
+  # git-gateway
   branch: master
 
 publish_mode: editorial_workflow
@@ -24,22 +26,6 @@ collections:
           - {label: Advantage, name: advantage, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}
           - {label: "Meta Title", name: meta_title, widget: string}
           - {label: "Meta Description", name: meta_description, widget: text}
-      - name: "product"
-        label: "Products"
-        file: "src/pages/products"
-        create: true
-        slug: "{{slug}}"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Slug, name: slug, widget: string}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: "Product Image", name: product_image, widget: image }
-          - {label: Body, name: body, widget: markdown}
-          - {label: Tags, name: tags, widget: list}
-          - {label: "Meta Title", name: meta_title, widget: string}
-          - {label: "Meta Description", name: meta_description, widget: text}
       - file: "src/pages/highlights/index.md"
         label: "Highlights Page"
         name: "highlights"
@@ -61,3 +47,19 @@ collections:
           - {label: Contact, name: contact, widget: list, fields: [{label: Email, name: email, widget: string}, {label: Description, name: description, widget: string}]}
           - {label: "Meta Title", name: meta_title, widget: string}
           - {label: "Meta Description", name: meta_description, widget: text}
+  - name: "product"
+    label: "Products"
+    folder: "src/pages/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: Slug, name: slug, widget: string}
+      - {label: Heading, name: heading, widget: string}
+      - {label: Subheading, name: subheading, widget: string}
+      - {label: "Product Image", name: product_image, widget: image }
+      - {label: Body, name: body, widget: markdown}
+      - {label: Tags, name: tags, widget: list}
+      - {label: "Meta Title", name: meta_title, widget: string}
+      - {label: "Meta Description", name: meta_description, widget: text}
