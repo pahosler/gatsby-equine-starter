@@ -5,7 +5,6 @@ import ProductsPreview from './preview-templates/ProductsPreview'
 import HighlightsPagePreview from './preview-templates/HighlightsPagePreview'
 import ContactPagePreview from './preview-templates/ContactPagePreview'
 
-// CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('home', HomePagePreview)
 CMS.registerPreviewTemplate('products', ProductsPreview)
 CMS.registerPreviewTemplate('highlights', HighlightsPagePreview)
