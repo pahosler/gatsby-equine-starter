@@ -21,7 +21,7 @@ const Footer = () => {
             <FontAwesomeIcon icon='map-marker-alt' size='3x' />
             <br />
             <div className='button is-rounded is-low-starch-blue' style={{ height: 44, width: 191, marginTop: 30 }}>
-              <Link to='/'><span className='has-text-ea-black'>FIND A STORE</span></Link>
+              <Link to='/locator'><span className='has-text-ea-black'>FIND A STORE</span></Link>
             </div>
           </div>
           <div className='column is-one-quarter has-text-centered has-text-low-starch-blue'>

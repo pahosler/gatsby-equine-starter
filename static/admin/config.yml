@@ -47,6 +47,16 @@ collections:
           - {label: Contact, name: contact, widget: list, fields: [{label: Email, name: email, widget: string}, {label: Description, name: description, widget: string}]}
           - {label: "Meta Title", name: meta_title, widget: string}
           - {label: "Meta Description", name: meta_description, widget: text}
+      - file: "src/pages/locator/index.md"
+        label: "Store Locator"
+        name: "locator"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "locator-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Subheading, name: subheading, widget: string}
+          - {label: "Meta Title", name: meta_title, widget: string }
+          - {label: "Meta Description", name: meta_description, widget: string}
   - name: "product"
     label: "Products"
     folder: "src/pages/products"

@@ -10,6 +10,7 @@ export default class HTML extends Component {
           <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
           {this.props.headComponents}
           <link rel='shortcut icon' href={favicon} />
+          <link href='https://api.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css' rel='stylesheet' />
         </head>
         <body>
           <div

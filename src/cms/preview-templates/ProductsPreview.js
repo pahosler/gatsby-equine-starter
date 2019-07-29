@@ -11,7 +11,7 @@ const ProductPreview = ({ entry, widgetFor }) => {
             content={widgetFor('body')}
             product_image={entry.getIn(['data', 'product_image'])}
             meta_title={entry.getIn(['data', 'meta_title'])}
-            meta_desc={entry.getIn(['data', 'meta_description'])}
+            meta_description={entry.getIn(['data', 'meta_description'])}
             title={entry.getIn(['data', 'title'])}
             heading={entry.getIn(['data', 'heading'])}
             subheading={entry.getIn(['data', 'subheading'])}
