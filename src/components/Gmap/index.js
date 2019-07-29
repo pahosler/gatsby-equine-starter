@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 
-export class Gmap extends Component() {
-  state = {
-    latitude: 0,
-    longitude: 0,
+export default class Gmap extends Component() {
+  constructor (props) {
+    super(props)
+    this.state = {
+      latitude: 0,
+      longitude: 0,
+    }
   }
 
   render () {
