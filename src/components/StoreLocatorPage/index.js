@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactMapboxGl, { Layer, Feature, Marker, ZoomControl } from 'react-mapbox-gl'
+// import ReactMapboxGl, { Layer, Feature, Marker, ZoomControl } from 'react-mapbox-gl'
 
-const Map = ReactMapboxGl({
-  accessToken:
-    'pk.eyJ1IjoicGFob3NsZXIiLCJhIjoiY2p5bWF0dnl2MGhiYzNjbXlnMjJzcWEwaCJ9.gWAMa4wXcII86dxSrLIJQQ',
-})
+// const Map = ReactMapboxGl({
+//   accessToken:
+//     'pk.eyJ1IjoicGFob3NsZXIiLCJhIjoiY2p5bWF0dnl2MGhiYzNjbXlnMjJzcWEwaCJ9.gWAMa4wXcII86dxSrLIJQQ',
+// })
 
 const StoreLocatorPage = ({
   title,
@@ -30,7 +30,7 @@ const StoreLocatorPage = ({
           <p className='title'>Main column</p>
           <p className='subtitle'>With some content</p>
           <div className='content'>
-            <Map
+            {/* <Map
               style='mapbox://styles/mapbox/streets-v11'
               center={[-90.120844, 29.958165]}
               containerStyle={{
@@ -42,7 +42,7 @@ const StoreLocatorPage = ({
               <Layer className='marker' type='symbol' id='marker' layout={{ 'icon-image': 'harbor-15' }}>
                 <Feature coordinates={[-90.120844, 29.958165]} />
               </Layer>
-            </Map>
+            </Map> */}
           </div>
         </article>
       </div>

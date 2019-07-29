@@ -60,14 +60,12 @@
     "gatsby-transformer-sharp": "^2.2.2",
     "lodash": "^4.17.14",
     "lodash-webpack-plugin": "^0.11.5",
-    "mapbox-gl": "^1.1.1",
     "netlify-cms-app": "^2.9.7",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "react-mapbox-gl": "^4.6.0",
     "react-share": "^3.0.0",
     "uglifyjs-webpack-plugin": "^2.1.3"
   }
