@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: 'product-page'
 title: Equine Advantage Growth
 slug: equine-advantage-growth
 heading: A portrait of health, vitality and life

@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: 'product-page'
 title: Equine Advantage 30% Ration Balancer
 slug: equine-advantage-ration-balancer
 heading: A portrait of health, vitality and life

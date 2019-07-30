@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: 'product-page'
 title: Equine Advantage Broodmare Yearling
 slug: equine-advantage-broodmare-yearling
 heading: A portrait of health, vitality and life

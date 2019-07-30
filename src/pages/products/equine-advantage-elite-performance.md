@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: 'product-page'
 title: Equine Advantage Elite Performance
 slug: equine-advantage-elite-performance
 heading: A portrait of health, vitality and life

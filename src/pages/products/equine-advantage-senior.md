@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: 'product-page'
 title: Equine Advantage Senior
 slug: equine-advantage-senior
 heading: A portrait of health, vitality and life

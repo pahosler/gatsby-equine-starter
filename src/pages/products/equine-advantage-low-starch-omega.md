@@ -1,5 +1,5 @@
 ---
-templateKey: product-page
+templateKey: 'product-page'
 title: Equine Advantage Low Starch Omega
 slug: equine-advantage-low-starch-omega
 heading: A portrait of health, vitality and life
