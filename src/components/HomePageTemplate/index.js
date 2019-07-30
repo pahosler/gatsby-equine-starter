@@ -81,7 +81,7 @@ const HomePageTemplate = ({
       name={quote.name}
       title={quote.title}
     />
-    <Advantage advantages={advantages.blurbs} />
+    <Advantage gridItems={advantages.blurbs} />
   </div>
 )
 
