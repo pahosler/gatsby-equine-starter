@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Advantage = ({ advantage }) => (
+const Advantage = ({ advantages }) => (
   <div className='section'>
     <div className='columns is-centered'>
       <div className='column is-half'>
@@ -10,7 +10,7 @@ const Advantage = ({ advantage }) => (
     </div>
     <div className='column is-three-fifths is-offset-one-fifth'>
       <div className='columns is-multiline is-centered'>
-        {advantage.map(({ image, text }) => (
+        {advantages.map(({ image, text }) => (
           <div key={image} className='column is-one-third'>
             {/* <div className='level-item'> */}
             {/* <figure className='image is-128x128' > */}
@@ -26,7 +26,7 @@ const Advantage = ({ advantage }) => (
 )
 
 Advantage.propTypes = {
-  advantage: PropTypes.arrayOf(
+  advantages: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string,
       text: PropTypes.string,

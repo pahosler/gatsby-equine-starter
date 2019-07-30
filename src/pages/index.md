@@ -46,21 +46,22 @@ quote:
   name: Betsy Ross
   title: Owner of Dancing Queen
 advantage:
-  - image: /img/fixed_formula-icon-01.svg
-    text: >
-      Our formulas are set by nutrionist and never varies until the formula or ingredients are updated to meet requirements
-  - image: /img/probiotics_icon-01.svg
-    text: >
-      A nutritional supplement given to horses to promote and maintain the growth of healthy hooves and coat
-  - image: /img/fixed_formula-icon-01.svg
-    text: >
-      Vitamin E enhances immunity and provides antioxidant protection against tissue damage
-  - image: /img/omega_3_icon-01.svg
-    text: >
-      Omega-3 essential fatty acids reduces tissue and joint inflamation, creates healthier digestive system, and stronger immune system
-  - image: /img/biotin_enhanced_icon.svg
-    text: >
-      Pre and pro biotics enables optimum digestion and helps maintain intestinal health
+  blurbs:
+    - image: /img/fixed_formula-icon-01.svg
+      text: >
+        Our formulas are set by nutrionist and never varies until the formula or ingredients are updated to meet requirements
+    - image: /img/probiotics_icon-01.svg
+      text: >
+        A nutritional supplement given to horses to promote and maintain the growth of healthy hooves and coat
+    - image: /img/fixed_formula-icon-01.svg
+      text: >
+        Vitamin E enhances immunity and provides antioxidant protection against tissue damage
+    - image: /img/omega_3_icon-01.svg
+      text: >
+        Omega-3 essential fatty acids reduces tissue and joint inflamation, creates healthier digestive system, and stronger immune system
+    - image: /img/biotin_enhanced_icon.svg
+      text: >
+        Pre and pro biotics enables optimum digestion and helps maintain intestinal health
 meta_title: Equine Advantage
 meta_description: >-
   The best a horse can get.

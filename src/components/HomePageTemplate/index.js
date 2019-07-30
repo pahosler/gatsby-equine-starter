@@ -15,7 +15,7 @@ const HomePageTemplate = ({
   offerings,
   partners,
   quote,
-  advantage,
+  advantages,
 }) => (
   <div>
     <Helmet>
@@ -81,7 +81,7 @@ const HomePageTemplate = ({
       name={quote.name}
       title={quote.title}
     />
-    <Advantage advantage={advantage} />
+    <Advantage advantages={advantages.blurbs} />
   </div>
 )
 
@@ -102,13 +102,9 @@ HomePageTemplate.propTypes = {
     name: PropTypes.string,
     title: PropTypes.string,
   }),
-  advantage: PropTypes.array,
-  // (
-  //   PropTypes.shape({
-  //     image: PropTypes.string,
-  //     text: PropTypes.string,
-  //   })
-  // ),
+  advantages: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
 }
 
 export default HomePageTemplate
