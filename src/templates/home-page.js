@@ -15,7 +15,7 @@ const HomePage = ({ data }) => {
         offerings={frontmatter.offerings}
         partners={frontmatter.partners}
         quote={frontmatter.quote}
-        advantages={frontmatter.advantage}
+        advantages={frontmatter.advantages}
         meta_title={frontmatter.meta_title}
         meta_description={frontmatter.meta_description}
       />
@@ -60,7 +60,7 @@ export const pageQuery = graphql`
           name
           title
         }
-        advantage {
+        advantages {
           blurbs{
             image
             text
