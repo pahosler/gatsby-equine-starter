@@ -13,9 +13,9 @@ const Advantage = ({ advantage }) => (
         {advantage.map(item => (
           <div key={item.image} className='column is-one-third'>
             {/* <div className='level-item'> */}
-            <figure className='image is-128x128' >
-              <img alt={item.name} src={item.image} style={{ margin: 50 }} />
-            </figure>
+            {/* <figure className='image is-128x128' > */}
+            <img alt={item.name} src={item.image} style={{ margin: 50 }} />
+            {/* </figure> */}
             {/* </div> */}
             <p className='is-size-5 has-text-ea-black has-text-centered' style={{ paddingTop: 20 }}>{item.text}</p>
           </div>
