@@ -57,7 +57,7 @@ collections:
           - {label: Subheading, name: subheading, widget: string}
           - {label: "Meta Title", name: meta_title, widget: string }
           - {label: "Meta Description", name: meta_description, widget: string}
-  - name: "product"
+  - name: "products"
     label: "Products"
     folder: "src/pages/products"
     create: true
