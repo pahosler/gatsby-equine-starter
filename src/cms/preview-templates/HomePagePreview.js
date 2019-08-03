@@ -8,7 +8,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
   const entryPartnerLogo = entry.getIn(['data', 'partners', 'logo'])
   const logo = entryPartnerLogo ? entryPartnerLogo.toJS() : []
 
-  const entryAdvantage = entry.getIn(['data', 'advantage', 'blurbs'])
+  const entryAdvantage = entry.getIn(['data', 'advantages', 'blurbs'])
   const advantage = entryAdvantage ? entryAdvantage.toJS() : []
 
   return (
