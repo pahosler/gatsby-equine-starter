@@ -61,7 +61,7 @@ export const pageQuery = graphql`
           title
         }
         advantages {
-          blurbs{
+          advantage{
             image
             text
           }

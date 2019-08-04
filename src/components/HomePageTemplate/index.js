@@ -81,7 +81,7 @@ const HomePageTemplate = ({
       name={quote.name}
       title={quote.title}
     />
-    <Advantage gridItems={advantages.blurbs} />
+    <Advantage gridItems={advantages.advantage} />
   </div>
 )
 
@@ -103,7 +103,7 @@ HomePageTemplate.propTypes = {
     title: PropTypes.string,
   }),
   advantages: PropTypes.shape({
-    blurbs: PropTypes.array,
+    advantage: PropTypes.array,
   }),
 }
 

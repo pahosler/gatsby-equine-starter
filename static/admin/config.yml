@@ -23,7 +23,7 @@ collections:
           - {label: Offerings, name: offerings, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Slug, name: slug, widget: string},{label: Name, name: name, widget: string}, {label: Text, name: text, widget: text}]}]}
           - {label: Partners, name: partners, widget: object, fields: [{label: Logo, name: logo, widget: list, fields: [{label: Image, name: image, widget: image}]}]}
           - {label: Quote, name: quote, widget: object, fields: [{label: Text, name: text, widget: text}, {label: Name, name: name, widget: string}, {label: Title, name: title, widget: string}]}
-          - {label: Advantage, name: advantages, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Advantage, name: advantages, widget: object, fields: [{label: Blurbs, name: advantage, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: "Meta Title", name: meta_title, widget: string}
           - {label: "Meta Description", name: meta_description, widget: text}
       - file: "src/pages/highlights/index.md"

@@ -46,7 +46,7 @@ quote:
   name: Betsy Ross
   title: Owner of Dancing Queen
 advantages:
-  blurbs:
+  advantage:
     - image: /img/fixed_formula-icon-01.svg
       text: >
         Our formulas are set by nutrionist and never varies until the formula or ingredients are updated to meet requirements
