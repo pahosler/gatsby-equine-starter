@@ -63,13 +63,6 @@ offerings:
         beet pulp & soy bean hulls. Senior offers increased protein, amino
         acids, trace minerals, biotin, Lysine and vitamin fortifications that
         older horses with reduced digestive efficiency may benefit from.
-    - image: /img/EquineAdvantage_Render-3.png
-      name: Butternut Crunch
-      slug: equine-advantage-butternut-crunch
-      text: >-
-        Not textured, not good for your horse, do NOT feed your horse candy you
-        silly person. Feed your horse good nutritious snacks like apples or
-        carrots!
 partners:
   logo:
     - image: /img/Diamondv_logo-01.svg
