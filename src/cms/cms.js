@@ -4,8 +4,10 @@ import HomePagePreview from './preview-templates/HomePagePreview'
 import ProductsPreview from './preview-templates/ProductsPreview'
 import HighlightsPagePreview from './preview-templates/HighlightsPagePreview'
 import ContactPagePreview from './preview-templates/ContactPagePreview'
+import StoreLocatorPagePreview from './preview-templates/StoreLocatorPagePreview'
 
 CMS.registerPreviewTemplate('home', HomePagePreview)
 CMS.registerPreviewTemplate('products', ProductsPreview)
 CMS.registerPreviewTemplate('highlights', HighlightsPagePreview)
+CMS.registerPreviewTemplate('locator', StoreLocatorPagePreview)
 CMS.registerPreviewTemplate('contact', ContactPagePreview)
