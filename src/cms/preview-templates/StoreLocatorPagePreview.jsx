@@ -9,7 +9,7 @@ const StoreLocatorPagePreview = ({ entry, getAsset }) => {
       subtitle={entry.getIn(['data', 'subtitle'])}
       heading={entry.getIn(['data', 'heading'])}
       meta_title={entry.getIn(['data', 'meta_title'])}
-      meta_description={entry.getIn(['data','meta_description'])}
+      meta_description={entry.getIn(['data', 'meta_description'])}
     />
   )
 }
