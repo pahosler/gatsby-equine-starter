@@ -25,11 +25,14 @@ const Products = ({ gridItems, logo }) => (
     </div>
     <div className='columns is-centered'>
       <div className='column is-half'>
-        <div className='columns is-mobile is-centered level'>
+        <div className='columns is-mobile is-centered'>
           {logo.map(logo => (
             <div key={logo.image} className='column is-3'>
               <section className='section' style={{ padding: 10 }}>
-                <figure className='image is-96x96 level-item'>
+                <figure className='image is-128x128 is-hidden-mobile'>
+                  <img alt='partner logo' src={logo.image} style={{ paddingRight: 10 }} />
+                </figure>
+                <figure className='image is-96x96 is-hidden-desktop'>
                   <img alt='partner logo' src={logo.image} style={{ paddingRight: 10 }} />
                 </figure>
               </section>

@@ -43,9 +43,7 @@ const Footer = () => {
       <div className='section is-low-starch-blue'>
         <div className='columns is-centered is-mobile'>
           <div className='column is-one-fifth-desktop is-half-mobile'>
-            <figure className='image is-128x128'>
               <img src={Logo} />
-            </figure>
           </div>
         </div>
       </div>
