@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import Products from '../Products'
 import Quote from '../Quote'
 import Advantage from '../Advantage'
+import NavBar from '../NavBar'
 
 const HomePageTemplate = ({
   title,
@@ -22,6 +23,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
+    <NavBar />
     <section className='hero is-white has-section-padding-none'>
       <div className='hero-body'>
         <div className='container'>
@@ -34,7 +36,8 @@ const HomePageTemplate = ({
             </div>
             <div className='column is-6  '>
               <div className='section is-hidden-mobile'>
-                <img src='/img/equineadvantage_logo.svg'
+                <img
+                  src='/img/equineadvantage_logo.svg'
                   style={{ height: 186, width: 350, marginTop: -10 }}
                   alt='Equine Advantage logo'
                 />
@@ -44,23 +47,23 @@ const HomePageTemplate = ({
         </div>
       </div>
     </section>
-    <section className='section is-paddingless'
-      style={{ padding: 0 }}
-    >
+    <section className='section is-paddingless' style={{ padding: 0 }}>
       <div className='columns is-mobile is-centered'>
         <div className='column is-three-fifths-desktop is-one-quarter-mobile' />
         <div className='column'>
-          <div className='button is-low-starch-blue is-border-low-starch-blue is-medium has-text-right is-radiusless'
-            style={{ zIndex: 10 }}
-          >
+          <div
+            className='button is-low-starch-blue is-border-low-starch-blue is-medium has-text-right is-radiusless'
+            style={{ zIndex: 10 }}>
             <Link className='has-text-black is-size-6 has-text-weight-bold' to='/'>
-            ORDER A SAMPLE
+              ORDER A SAMPLE
             </Link>
           </div>
         </div>
       </div>
       <figure className='is-3by1'>
-        <img className='image' src='/img/horse-header.png'
+        <img
+          className='image'
+          src='/img/horse-header.png'
           style={{ marginTop: -50 }}
           alt='An oil painting of a mare and her foul'
         />
@@ -76,11 +79,7 @@ const HomePageTemplate = ({
       </div>
       <Products gridItems={offerings.blurbs} logo={partners.logo} />
     </section>
-    <Quote
-      text={quote.text}
-      name={quote.name}
-      title={quote.title}
-    />
+    <Quote text={quote.text} name={quote.name} title={quote.title} />
     <Advantage gridItems={advantages.blurbs} />
   </div>
 )
