@@ -79,17 +79,8 @@ const HomePageTemplate = ({
       </div>
       <Products gridItems={offerings.blurbs} logo={partners.logo} />
     </section>
-<<<<<<< HEAD:src/components/HomePageTemplate/index.js
     <Quote text={quote.text} name={quote.name} title={quote.title} />
     <Advantage gridItems={advantages.blurbs} />
-=======
-    <Quote
-      text={quote.text}
-      name={quote.name}
-      title={quote.title}
-    />
-    <Advantage gridItems={advantages.advantage} />
->>>>>>> ea5bf32467ad047a9b48daa012883a917b3ceca5:src/components/HomePageTemplate/index.jsx
   </div>
 )
 
