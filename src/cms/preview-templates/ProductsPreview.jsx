@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ProductsPageTemplate from '../../components/ProductsPageTemplate'
 
-const ProductPreview = ({ entry, widgetFor }) => {
+const ProductPreview = ({ entry, widgetFor, getAsset }) => {
   return (
     <div className='container content'>
       <div className='columns'>
@@ -28,6 +28,7 @@ ProductPreview.propTypes = {
     getIn: PropTypes.func,
   }),
   widgetFor: PropTypes.func,
+  getAsset: PropTypes.func
 }
 
 export default ProductPreview
