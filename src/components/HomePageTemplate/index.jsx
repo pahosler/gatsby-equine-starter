@@ -80,7 +80,7 @@ const HomePageTemplate = ({
       <Products gridItems={offerings.blurbs} logo={partners.logo} />
     </section>
     <Quote text={quote.text} name={quote.name} title={quote.title} />
-    <Advantage gridItems={advantages.blurbs} />
+    <Advantage gridItems={advantages.advantage} />
   </div>
 )
 
