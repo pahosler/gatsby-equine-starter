@@ -51,7 +51,7 @@ exports.createPages = ({ actions, graphql }) => {
     createPaginatedPages({
       edges: posts,
       createPage: createPage,
-      pageTemplate: 'src/templates/product-page.js',
+      pageTemplate: 'src/templates/product-page.jsx',
       pageLength: 6, // This is optional and defaults to 10 if not used
       pathPrefix: 'products', // This is optional and defaults to an empty string if not used
       context: {}, // This is optional and defaults to an empty object if not used
@@ -61,7 +61,7 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
-        component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.js`),
+        component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`),
         // additional data can be passed via context
         context: {
           id,
